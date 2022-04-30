@@ -6,17 +6,25 @@ namespace EscapeGameRemake.forms
     public partial class Digicode : Form
     {
         private int DoorCode;
+        private bool typedCode = false;
+
         public Digicode(Form mainForm, int DoorCode)
         {
             InitializeComponent();
             this.DoorCode = DoorCode;
         }
 
+        public bool getTypedCode()
+        {
+            return typedCode;
+        }
+
         public bool check_code()
         {
             if (code_label.Text != "")
-                return DoorCode == Int16.Parse(code_label.Text);
+                return DoorCode == short.Parse(code_label.Text);
             return false;
+
         }
 
         private void addToLabel(string nb)
@@ -24,18 +32,8 @@ namespace EscapeGameRemake.forms
             code_label.Text += nb;
             if (code_label.Text.Length == 4)
             {
-                /*if (check_code())
-                {
-                    // Do stuff
-                    MessageBox.Show("Good password");
-                    Close();
-                }
-                else
-                {
-                    MessageBox.Show("Wrong password");
-                    code_label.Text = "";
-                }*/
                 MessageBox.Show("Vérification du code ...");
+                typedCode = true;
                 Close();
             }
         }

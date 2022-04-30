@@ -43,32 +43,54 @@ namespace EscapeGameRemake.forms
         {
             Digicode digicode = new Digicode(this, DOORCODE);
             digicode.ShowDialog();
-            if (digicode.check_code())
+            if (digicode.getTypedCode() && digicode.check_code())
             {
                 SoundController.Play(SoundType.DOOR);
                 DoorOpened = true;
                 CheckDoor();
-            } else
+            }
+            else if (digicode.getTypedCode() && !digicode.check_code())
             {
-                AxWMPLib.AxWindowsMediaPlayer screamer = new AxWMPLib.AxWindowsMediaPlayer();
-                screamer.Location = new System.Drawing.Point(0, 0);
+                var Rand = new Random();
+                if (Rand.Next(3) == 0)
+                    Screamer.Run(this, Path.Name.OFFICE_JS);
+
+                /*var screamer = this.axWindowsMediaPlayer1;
+                screamer.URL = Path.Get(Path.Name.OFFICE_JS);*/
+
+                /*var screamer = new AxWMPLib.AxWindowsMediaPlayer();
+                Controls.Add(screamer);
+                screamer.BringToFront();
+                screamer.PlayStateChange += Screamer_PlayStateChange;
                 screamer.CreateControl();
-                screamer.Width = this.Width;
-                screamer.Height = this.Height;
-                screamer.Dock = DockStyle.Fill;
-                //screamer.fullScreen = true;
-                screamer.stretchToFit = false;
-                screamer.settings.autoStart = true;
-                // screamer.settings.setMode("loop", true);
-
-                this.Controls.Add(screamer);
-
-                screamer.uiMode = "none";
-                //screamer.Size = screamer.Parent.Size;
-
-                screamer.URL = Application.StartupPath + "\\vid\\screamer.mp4";
-
+                screamer.Visible = false;
+                screamer.URL = Path.Get(Path.Name.OFFICE_JS);*/
             }
         }
+
+        /*private void Screamer_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
+        {
+            var screamer = (AxWMPLib.AxWindowsMediaPlayer)sender;
+            
+            switch (e.newState)
+            {
+                case 1:
+                    //screamer.fullScreen = false;
+                    screamer.Visible = false;
+                    break;
+                case 3:
+                    screamer.Location = new System.Drawing.Point(0, 0);
+                    screamer.Width = Width;
+                    screamer.Height = Height;
+                    screamer.uiMode = "none";
+                    //screamer.fullScreen = true;
+                    screamer.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom;
+                    screamer.Visible = true;
+                    break;
+                default:
+                    Console.WriteLine(screamer.playState);
+                    break;
+            }
+        }*/
     }
 }

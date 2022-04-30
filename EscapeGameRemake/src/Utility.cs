@@ -22,7 +22,7 @@ namespace EscapeGameRemake.src
                 Application.Exit();
         }
 
-        public static void AddPaperToForm(Form MainForm, string Text)
+        public static void AddPaperToForm(Form MainForm, string Text) // Add a paper to a form
         {
             SoundController.Play(SoundType.PAPER);
             PictureBox PB = new Paper(MainForm, Text).Create();
@@ -30,7 +30,7 @@ namespace EscapeGameRemake.src
             PB.BringToFront();
         }
 
-        public static void AddPostItToForm(Form MainForm, string Text)
+        public static void AddPostItToForm(Form MainForm, string Text) // Add a post it to a form
         {
             SoundController.Play(SoundType.PAPER);
             PictureBox PIT = new PostIt(MainForm, Text).Create();

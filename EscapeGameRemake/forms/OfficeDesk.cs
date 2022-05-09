@@ -39,7 +39,8 @@ namespace EscapeGameRemake.forms
 
         private void paper3_button_Click(object sender, System.EventArgs e)
         {
-            Utility.AddPaperToForm(this, "\n\n\n\n\n\n\n\n\n\n          It's me");
+            Utility.AddPaperToForm(this, "Pourquoi Robert Mange des Olives ?\n\nCar certaines bases de données sont MAJestueuses\n" +
+                                         "Alors que d'autres sont minUSCULES.\n\n\n\n\n\n\n          It's me");
         }
 
         private void postit1_button_Click(object sender, System.EventArgs e)

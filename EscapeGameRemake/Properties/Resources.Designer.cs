@@ -73,6 +73,16 @@ namespace EscapeGameRemake.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ContextPaper {
+            get {
+                object obj = ResourceManager.GetObject("ContextPaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Coridoor_background {
             get {
                 object obj = ResourceManager.GetObject("Coridoor_background", resourceCulture);

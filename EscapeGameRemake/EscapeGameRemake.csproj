@@ -105,6 +105,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\ContextPaper.cs" />
     <Compile Include="src\Path.cs" />
     <Compile Include="src\Paper.cs" />
     <Compile Include="src\PostIt.cs" />
@@ -216,6 +217,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PirateCove_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContextPaper.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

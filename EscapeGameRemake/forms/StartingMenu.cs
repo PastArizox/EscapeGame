@@ -18,7 +18,8 @@ namespace EscapeGameRemake
         private void play_button_Click(object sender, System.EventArgs e)
         {
             SoundController.PlayMainMusic();
-            Utility.OpenForm(this, new forms.Office());
+            Utility.AddContextPaperToForm(this);
+            //Utility.OpenForm(this, new forms.Office());
         }
 
         private void credits_button_Click(object sender, System.EventArgs e)
@@ -39,6 +40,11 @@ namespace EscapeGameRemake
         private void credits_button_MouseHover(object sender, System.EventArgs e)
         {
             SoundController.Play(SoundType.CLICK);
+        }
+
+        private void context_button_Click(object sender, System.EventArgs e)
+        {
+            Utility.AddContextPaperToForm(this);
         }
     }
 }

@@ -121,6 +121,9 @@
   <data name="Closet_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Closet_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ContextPaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContextPaper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Coridoor_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Coridoor_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

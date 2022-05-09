@@ -32,6 +32,7 @@ namespace EscapeGameRemake
             this.nose_honk_button = new System.Windows.Forms.Button();
             this.play_button = new System.Windows.Forms.Button();
             this.credits_button = new System.Windows.Forms.Button();
+            this.context_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nose_honk_button
@@ -43,7 +44,7 @@ namespace EscapeGameRemake
             this.nose_honk_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.nose_honk_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nose_honk_button.Location = new System.Drawing.Point(766, 261);
-            this.nose_honk_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nose_honk_button.Margin = new System.Windows.Forms.Padding(2);
             this.nose_honk_button.Name = "nose_honk_button";
             this.nose_honk_button.Size = new System.Drawing.Size(112, 62);
             this.nose_honk_button.TabIndex = 2;
@@ -59,7 +60,7 @@ namespace EscapeGameRemake
             this.play_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.play_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.play_button.Location = new System.Drawing.Point(188, 271);
-            this.play_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.play_button.Margin = new System.Windows.Forms.Padding(2);
             this.play_button.Name = "play_button";
             this.play_button.Size = new System.Drawing.Size(98, 42);
             this.play_button.TabIndex = 3;
@@ -76,13 +77,29 @@ namespace EscapeGameRemake
             this.credits_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.credits_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.credits_button.Location = new System.Drawing.Point(188, 338);
-            this.credits_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.credits_button.Margin = new System.Windows.Forms.Padding(2);
             this.credits_button.Name = "credits_button";
             this.credits_button.Size = new System.Drawing.Size(171, 42);
             this.credits_button.TabIndex = 4;
             this.credits_button.UseVisualStyleBackColor = false;
             this.credits_button.Click += new System.EventHandler(this.credits_button_Click);
             this.credits_button.MouseHover += new System.EventHandler(this.credits_button_MouseHover);
+            // 
+            // context_button
+            // 
+            this.context_button.BackColor = System.Drawing.Color.Transparent;
+            this.context_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.context_button.FlatAppearance.BorderSize = 0;
+            this.context_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.context_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.context_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.context_button.Location = new System.Drawing.Point(188, 409);
+            this.context_button.Margin = new System.Windows.Forms.Padding(2);
+            this.context_button.Name = "context_button";
+            this.context_button.Size = new System.Drawing.Size(171, 42);
+            this.context_button.TabIndex = 5;
+            this.context_button.UseVisualStyleBackColor = false;
+            this.context_button.Click += new System.EventHandler(this.context_button_Click);
             // 
             // StartingMenu
             // 
@@ -91,12 +108,13 @@ namespace EscapeGameRemake
             this.BackgroundImage = global::EscapeGameRemake.Properties.Resources.StartingMenu_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1112, 612);
+            this.Controls.Add(this.context_button);
             this.Controls.Add(this.credits_button);
             this.Controls.Add(this.play_button);
             this.Controls.Add(this.nose_honk_button);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "StartingMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -111,6 +129,7 @@ namespace EscapeGameRemake
         private System.Windows.Forms.Button nose_honk_button;
         private System.Windows.Forms.Button play_button;
         private System.Windows.Forms.Button credits_button;
+        private System.Windows.Forms.Button context_button;
     }
 }
 

@@ -37,5 +37,13 @@ namespace EscapeGameRemake.src
             MainForm.Controls.Add(PIT);
             PIT.BringToFront();
         }
+
+        public static void AddContextPaperToForm(Form MainForm) // Add the context paper to a form
+        {
+            SoundController.Play(SoundType.PAPER);
+            PictureBox PCP = new ContextPaper(MainForm).Create();
+            MainForm.Controls.Add(PCP);
+            PCP.BringToFront();
+        }
     }
 }

@@ -15,11 +15,27 @@ namespace EscapeGameRemake.forms
         public testscreamer()
         {
             InitializeComponent();
+            axWindowsMediaPlayer1.settings.setMode("loop", true);
         }
 
         private void testscreamer_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void testscreamer_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void testscreamer_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void testscreamer_DoubleClick(object sender, EventArgs e)
+        {
+
         }
     }
 }

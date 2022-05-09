@@ -33,6 +33,7 @@ namespace EscapeGameRemake.forms
             this.digicode_button = new System.Windows.Forms.Button();
             this.door_button = new System.Windows.Forms.Button();
             this.return_button = new System.Windows.Forms.Button();
+            this.chest_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // desk_button
@@ -82,6 +83,7 @@ namespace EscapeGameRemake.forms
             this.door_button.TabIndex = 9;
             this.door_button.UseVisualStyleBackColor = false;
             this.door_button.Visible = false;
+            this.door_button.Click += new System.EventHandler(this.door_button_Click);
             // 
             // return_button
             // 
@@ -101,6 +103,21 @@ namespace EscapeGameRemake.forms
             this.return_button.UseVisualStyleBackColor = false;
             this.return_button.Click += new System.EventHandler(this.return_button_Click);
             // 
+            // chest_button
+            // 
+            this.chest_button.BackColor = System.Drawing.Color.Transparent;
+            this.chest_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chest_button.FlatAppearance.BorderSize = 0;
+            this.chest_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.chest_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.chest_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chest_button.Location = new System.Drawing.Point(421, 474);
+            this.chest_button.Margin = new System.Windows.Forms.Padding(2);
+            this.chest_button.Name = "chest_button";
+            this.chest_button.Size = new System.Drawing.Size(59, 32);
+            this.chest_button.TabIndex = 13;
+            this.chest_button.UseVisualStyleBackColor = false;
+            // 
             // Office
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -108,6 +125,7 @@ namespace EscapeGameRemake.forms
             this.BackgroundImage = global::EscapeGameRemake.Properties.Resources.Office_OFF_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1112, 612);
+            this.Controls.Add(this.chest_button);
             this.Controls.Add(this.return_button);
             this.Controls.Add(this.desk_button);
             this.Controls.Add(this.digicode_button);
@@ -130,5 +148,6 @@ namespace EscapeGameRemake.forms
         public System.Windows.Forms.Button digicode_button;
         private System.Windows.Forms.Button door_button;
         private System.Windows.Forms.Button return_button;
+        private System.Windows.Forms.Button chest_button;
     }
 }

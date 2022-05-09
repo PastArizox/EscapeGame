@@ -32,20 +32,82 @@ namespace EscapeGameRemake.forms
 
         private void paper2_button_Click(object sender, System.EventArgs e)
         {
-            Utility.AddPaperToForm(this, "Pour sortir de cette salle il vous faudra trouver un code " +
-                                         "en triant les données dans les bonnes catégories.\n\n" +
-                                         "Retenez bien qu'une donnée peut se trouver dans différentes catégories.");
+            Utility.AddPaperToForm(this, "Des données se sont perdues dans cette salle. Vous pourrez trouver le code " +
+                                         "en triant les données dans les bonnes catégories.\n\n\n\n\n\n\n\n" +
+                                         "Attention à Bonnie, il n'aime pas beaucoup les humains.");
         }
 
         private void paper3_button_Click(object sender, System.EventArgs e)
         {
-            Utility.AddPaperToForm(this, "Feuille 3");
+            Utility.AddPaperToForm(this, "\n\n\n\n\n\n\n\n\n\n          It's me");
         }
 
         private void postit1_button_Click(object sender, System.EventArgs e)
         {
-            Utility.AddPostItToForm(this, "Salut tout le monde c'est DavidLePoconmon" +
-                                          "\nEt\nPomme\nDe\nTerre");
+            Utility.AddPostItToForm(this, 
+                "               Dauphin\n" +   
+                "   Addax\n\n" +
+                "                               Ara bleu\n\n\n" +
+                "       Poissons");
+        }
+
+        private void postit2_button_Click(object sender, System.EventArgs e)
+        {
+            Utility.AddPostItToForm(this,
+                "   Caïman\n\n" +
+                "                       Cobra\n" +
+                "Argali\n\n\n" +
+                "       Reptiles");
+        }
+
+        private void postit3_button_Click(object sender, System.EventArgs e)
+        {
+            Utility.AddPostItToForm(this,
+                "              Buse\n\n" +
+                "                           Canard\n" +
+                "Bariroussa\n" +
+                "             Buffle\n\n" +
+                "                   Mammifère");
+        }
+
+        private void postit4_button_Click(object sender, System.EventArgs e)
+        {
+            Utility.AddPostItToForm(this, 
+                "             Cerf\n\n" +
+                "    Python\n" +
+                "                        Caméléon");
+        }
+
+        private void postit5_button_Click(object sender, System.EventArgs e)
+        {
+            Utility.AddPostItToForm(this, 
+                "                      Couleuvre\n\n" +
+                "       Esturgeon\n\n\n" +
+                "                   Chevreuil");
+        }
+
+        private void postit6_button_Click(object sender, System.EventArgs e)
+        {
+            Utility.AddPostItToForm(this,
+                "Ablette\n\n" +
+                "                               Bar\n\n" +
+                "       Espadon\n" +
+                "                       Capucin\n" +
+                " Crotale");
+        }
+
+        private void postit7_button_Click(object sender, System.EventArgs e)
+        {
+            Utility.AddPostItToForm(this, "");
+        }
+
+        private void postit8_button_Click(object sender, System.EventArgs e)
+        {
+            Utility.AddPostItToForm(this,
+                "                           Faucon\n" +
+                "       Tortue\n\n" +
+                "Balène\n\n" +
+                "                   Oiseaux");
         }
     }
 }

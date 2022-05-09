@@ -49,11 +49,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="forms\Closet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Closet.Designer.cs">
+      <DependentUpon>Closet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Coridoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Coridoor.Designer.cs">
+      <DependentUpon>Coridoor.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Digicode.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forms\Digicode.Designer.cs">
       <DependentUpon>Digicode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Dining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Dining.Designer.cs">
+      <DependentUpon>Dining.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Office.cs">
       <SubType>Form</SubType>
@@ -66,6 +84,12 @@
     </Compile>
     <Compile Include="forms\OfficeDesk.Designer.cs">
       <DependentUpon>OfficeDesk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\PirateCove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\PirateCove.Designer.cs">
+      <DependentUpon>PirateCove.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\StartingMenu.cs">
       <SubType>Form</SubType>
@@ -88,14 +112,26 @@
     <Compile Include="src\SoundController.cs" />
     <Compile Include="src\temp.cs" />
     <Compile Include="src\Utility.cs" />
+    <EmbeddedResource Include="forms\Closet.resx">
+      <DependentUpon>Closet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Coridoor.resx">
+      <DependentUpon>Coridoor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Digicode.resx">
       <DependentUpon>Digicode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Dining.resx">
+      <DependentUpon>Dining.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Office.resx">
       <DependentUpon>Office.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\OfficeDesk.resx">
       <DependentUpon>OfficeDesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\PirateCove.resx">
+      <DependentUpon>PirateCove.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\StartingMenu.resx">
       <DependentUpon>StartingMenu.cs</DependentUpon>
@@ -149,15 +185,6 @@
     <None Include="Resources\Digicode_background.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Office_OFF_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Office_ON_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\OfficeDesk_background.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\StartingMenu_background.png" />
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +195,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PostIt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office_OFF_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office_ON_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coridoor_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OfficeDesk_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Closet_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dining_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PirateCove_background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

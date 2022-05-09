@@ -52,6 +52,9 @@ namespace EscapeGameRemake.forms
             this.Name = "testscreamer";
             this.Text = "testscreamer";
             this.Load += new System.EventHandler(this.testscreamer_Load);
+            this.DoubleClick += new System.EventHandler(this.testscreamer_DoubleClick);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.testscreamer_MouseClick);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.testscreamer_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
 

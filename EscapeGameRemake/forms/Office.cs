@@ -7,7 +7,7 @@ namespace EscapeGameRemake.forms
     public partial class Office : Form
     {
         private static bool DoorOpened = false;
-        private static readonly int DOORCODE = 8453;
+        private static readonly int DOORCODE = 4794;
 
         public Office()
         {
@@ -52,8 +52,8 @@ namespace EscapeGameRemake.forms
             else if (digicode.getTypedCode() && !digicode.check_code())
             {
                 var Rand = new Random();
-                if (Rand.Next(3) == 0)
-                    Screamer.Run(this, Path.Name.OFFICE_JS);
+                if (Rand.Next(2) == 0)
+                    Screamer.Run(this, Path.Name.OFFICE_JS, false);
 
                 /*var screamer = this.axWindowsMediaPlayer1;
                 screamer.URL = Path.Get(Path.Name.OFFICE_JS);*/
@@ -66,6 +66,11 @@ namespace EscapeGameRemake.forms
                 screamer.Visible = false;
                 screamer.URL = Path.Get(Path.Name.OFFICE_JS);*/
             }
+        }
+
+        private void door_button_Click(object sender, EventArgs e)
+        {
+            Utility.OpenForm(this, new Coridoor());
         }
 
         /*private void Screamer_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)

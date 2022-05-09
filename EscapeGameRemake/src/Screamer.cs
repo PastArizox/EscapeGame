@@ -6,16 +6,20 @@ namespace EscapeGameRemake.src
     public class Screamer
     {
         private static Form mainForm;
+        private static bool fullscreen;
 
-        public static void Run(Form mainForm, Path.Name name)
+        public static void Run(Form mainForm, Path.Name name, bool fullscreen)
         {
             Screamer.mainForm = mainForm;
+            Screamer.fullscreen = fullscreen;
             var screamer = new AxWMPLib.AxWindowsMediaPlayer();
             mainForm.Controls.Add(screamer);
             screamer.BringToFront();
             screamer.PlayStateChange += Screamer_PlayStateChange;
             screamer.CreateControl();
             screamer.Visible = false;
+            screamer.enableContextMenu = false;
+            screamer.Ctlenabled = false;
             screamer.URL = Path.Get(name);
         }
 
@@ -26,7 +30,7 @@ namespace EscapeGameRemake.src
             switch (e.newState)
             {
                 case 1:
-                    //screamer.fullScreen = false;
+                    if (fullscreen) screamer.fullScreen = false;
                     screamer.Visible = false;
                     break;
                 case 3:
@@ -34,7 +38,7 @@ namespace EscapeGameRemake.src
                     screamer.Width = mainForm.Width;
                     screamer.Height = mainForm.Height;
                     screamer.uiMode = "none";
-                    //screamer.fullScreen = true;
+                    if (fullscreen) screamer.fullScreen = true;
                     screamer.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom;
                     screamer.Visible = true;
                     break;

@@ -4,9 +4,6 @@ using System.Collections.Generic;
 
 namespace EscapeGameRemake.src
 {
-
-    // Flemme de faire une classe qui hérite d'une classe parent avec Paper
-    // Donc un copié coller c'est bien
     class PostIt
     {
         private readonly Bitmap Image = Properties.Resources.PostIt;
@@ -52,7 +49,6 @@ namespace EscapeGameRemake.src
                 }
             }
         }
-
         private void EnableBackgroundEvents()
         {
             for (int i = 0; i < OffControls.Count; i++)
@@ -75,7 +71,6 @@ namespace EscapeGameRemake.src
                 Text = Text,
                 ForeColor = Color.Black,
                 Font = new Font("Miriam Libre", 25),
-                //Font = new Font("Noto Serif Lao", 21),
                 BackColor = Color.Transparent,
                 AutoSize = false,
                 Size = new Size(Width - 100, Height - 100),

@@ -88,6 +88,7 @@ namespace EscapeGameRemake.src
                 Location = new Point(PosX, PosY),
                 Size = new Size(Width, Height),
                 SizeMode = PictureBoxSizeMode.StretchImage,
+                BackColor = Color.Transparent,
                 Image = Image
             };
             PB.Controls.Add(TextLabel);

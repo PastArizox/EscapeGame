@@ -49,6 +49,7 @@ namespace EscapeGameRemake
             this.nose_honk_button.Size = new System.Drawing.Size(112, 62);
             this.nose_honk_button.TabIndex = 2;
             this.nose_honk_button.UseVisualStyleBackColor = false;
+            this.nose_honk_button.Visible = false;
             this.nose_honk_button.Click += new System.EventHandler(this.nose_honk_button_Click);
             // 
             // play_button
@@ -65,6 +66,7 @@ namespace EscapeGameRemake
             this.play_button.Size = new System.Drawing.Size(98, 42);
             this.play_button.TabIndex = 3;
             this.play_button.UseVisualStyleBackColor = false;
+            this.play_button.Visible = false;
             this.play_button.Click += new System.EventHandler(this.play_button_Click);
             this.play_button.MouseHover += new System.EventHandler(this.play_button_MouseHover);
             // 
@@ -82,6 +84,7 @@ namespace EscapeGameRemake
             this.credits_button.Size = new System.Drawing.Size(171, 42);
             this.credits_button.TabIndex = 4;
             this.credits_button.UseVisualStyleBackColor = false;
+            this.credits_button.Visible = false;
             this.credits_button.Click += new System.EventHandler(this.credits_button_Click);
             this.credits_button.MouseHover += new System.EventHandler(this.credits_button_MouseHover);
             // 
@@ -99,6 +102,7 @@ namespace EscapeGameRemake
             this.context_button.Size = new System.Drawing.Size(171, 42);
             this.context_button.TabIndex = 5;
             this.context_button.UseVisualStyleBackColor = false;
+            this.context_button.Visible = false;
             this.context_button.Click += new System.EventHandler(this.context_button_Click);
             // 
             // StartingMenu
@@ -120,6 +124,7 @@ namespace EscapeGameRemake
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.StartingMenu_Load);
+            this.Shown += new System.EventHandler(this.StartingMenu_Shown);
             this.ResumeLayout(false);
 
         }

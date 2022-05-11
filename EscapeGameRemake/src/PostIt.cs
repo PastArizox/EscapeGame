@@ -15,6 +15,7 @@ namespace EscapeGameRemake.src
         private readonly int PosY;
 
         private readonly Form MainForm;
+        private forms.OverObject newForm;
         private readonly List<string> OffControls = new List<string>();
 
         private PictureBox PB;
@@ -29,16 +30,21 @@ namespace EscapeGameRemake.src
             this.MainForm = MainForm;
         }
 
-        public PictureBox Create()
+        public void Create()
         {
-            DisableBackgroundEvents();
+            //DisableBackgroundEvents();
             Label TextLabel = InitLabel(Text);
             PictureBox Paper = InitPictureBox(TextLabel, Image);
             PB = Paper;
-            return Paper;
+
+            newForm = new forms.OverObject();
+            newForm.Size = new Size(Width, Height);
+            // newForm.Parent = MainForm;
+            newForm.Controls.Add(PB);
+            newForm.ShowDialog();
         }
 
-        private void DisableBackgroundEvents()
+        /*private void DisableBackgroundEvents()
         {
             for (int i = 0; i < MainForm.Controls.Count; i++)
             {
@@ -62,7 +68,7 @@ namespace EscapeGameRemake.src
                     }
                 }
             }
-        }
+        }*/
 
         private Label InitLabel(string Text)
         {
@@ -84,7 +90,8 @@ namespace EscapeGameRemake.src
         {
             PictureBox PB = new PictureBox
             {
-                Location = new Point(PosX, PosY),
+                //Location = new Point(PosX, PosY),
+                Location = new Point(0, 0),
                 Size = new Size(Width, Height),
                 SizeMode = PictureBoxSizeMode.StretchImage,
                 BackColor = Color.Transparent,
@@ -99,7 +106,8 @@ namespace EscapeGameRemake.src
         private void Close_MouseClick(object sender, MouseEventArgs e)
         {
             MainForm.Controls.Remove(PB);
-            EnableBackgroundEvents();
+            newForm.Close();
+            //EnableBackgroundEvents();
         }
     }
 }

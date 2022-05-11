@@ -46,5 +46,13 @@ namespace EscapeGameRemake
         {
             Utility.AddContextPaperToForm(this);
         }
+
+        private void StartingMenu_Shown(object sender, System.EventArgs e)
+        {
+            play_button.Visible = true;
+            credits_button.Visible = true;
+
+            nose_honk_button.Visible = true;
+        }
     }
 }

@@ -110,5 +110,17 @@ namespace EscapeGameRemake.forms
                 "Balène\n\n" +
                 "                   Oiseaux");
         }
+
+        private void OfficeDesk_Shown(object sender, System.EventArgs e)
+        {
+            foreach (Control ctrl in Controls)
+            {
+                if (ctrl.Name.Contains("paper") || ctrl.Name.Contains("postit"))
+                {
+                    ctrl.Visible = true;
+                }
+                nose_honk_button.Visible = true;
+            }
+        }
     }
 }

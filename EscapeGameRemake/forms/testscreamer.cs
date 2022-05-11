@@ -15,7 +15,7 @@ namespace EscapeGameRemake.forms
         public testscreamer()
         {
             InitializeComponent();
-            axWindowsMediaPlayer1.settings.setMode("loop", true);
+            //axWindowsMediaPlayer1.settings.setMode("loop", true);
         }
 
         private void testscreamer_Load(object sender, EventArgs e)

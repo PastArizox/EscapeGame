@@ -50,6 +50,7 @@ namespace EscapeGameRemake.forms
             this.desk_button.Size = new System.Drawing.Size(346, 350);
             this.desk_button.TabIndex = 11;
             this.desk_button.UseVisualStyleBackColor = false;
+            this.desk_button.Visible = false;
             this.desk_button.Click += new System.EventHandler(this.desk_button_Click);
             // 
             // digicode_button
@@ -66,6 +67,7 @@ namespace EscapeGameRemake.forms
             this.digicode_button.Size = new System.Drawing.Size(43, 128);
             this.digicode_button.TabIndex = 10;
             this.digicode_button.UseVisualStyleBackColor = false;
+            this.digicode_button.Visible = false;
             this.digicode_button.Click += new System.EventHandler(this.digicode_button_Click);
             // 
             // door_button
@@ -117,6 +119,7 @@ namespace EscapeGameRemake.forms
             this.chest_button.Size = new System.Drawing.Size(59, 32);
             this.chest_button.TabIndex = 13;
             this.chest_button.UseVisualStyleBackColor = false;
+            this.chest_button.Visible = false;
             // 
             // Office
             // 
@@ -138,6 +141,7 @@ namespace EscapeGameRemake.forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Office";
             this.Load += new System.EventHandler(this.Office_Load);
+            this.Shown += new System.EventHandler(this.Office_Shown);
             this.ResumeLayout(false);
 
         }

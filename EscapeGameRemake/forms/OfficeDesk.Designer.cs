@@ -76,6 +76,7 @@ namespace EscapeGameRemake.forms
             this.paper1_button.Size = new System.Drawing.Size(85, 70);
             this.paper1_button.TabIndex = 14;
             this.paper1_button.UseVisualStyleBackColor = false;
+            this.paper1_button.Visible = false;
             this.paper1_button.Click += new System.EventHandler(this.paper1_button_Click);
             // 
             // paper2_button
@@ -92,6 +93,7 @@ namespace EscapeGameRemake.forms
             this.paper2_button.Size = new System.Drawing.Size(62, 70);
             this.paper2_button.TabIndex = 15;
             this.paper2_button.UseVisualStyleBackColor = false;
+            this.paper2_button.Visible = false;
             this.paper2_button.Click += new System.EventHandler(this.paper2_button_Click);
             // 
             // paper3_button
@@ -108,6 +110,7 @@ namespace EscapeGameRemake.forms
             this.paper3_button.Size = new System.Drawing.Size(78, 84);
             this.paper3_button.TabIndex = 16;
             this.paper3_button.UseVisualStyleBackColor = false;
+            this.paper3_button.Visible = false;
             this.paper3_button.Click += new System.EventHandler(this.paper3_button_Click);
             // 
             // nose_honk_button
@@ -124,6 +127,7 @@ namespace EscapeGameRemake.forms
             this.nose_honk_button.Size = new System.Drawing.Size(14, 8);
             this.nose_honk_button.TabIndex = 17;
             this.nose_honk_button.UseVisualStyleBackColor = false;
+            this.nose_honk_button.Visible = false;
             this.nose_honk_button.Click += new System.EventHandler(this.nose_honk_button_Click);
             // 
             // postit1_button
@@ -140,6 +144,7 @@ namespace EscapeGameRemake.forms
             this.postit1_button.Size = new System.Drawing.Size(86, 82);
             this.postit1_button.TabIndex = 18;
             this.postit1_button.UseVisualStyleBackColor = false;
+            this.postit1_button.Visible = false;
             this.postit1_button.Click += new System.EventHandler(this.postit1_button_Click);
             // 
             // postit2_button
@@ -156,6 +161,7 @@ namespace EscapeGameRemake.forms
             this.postit2_button.Size = new System.Drawing.Size(82, 76);
             this.postit2_button.TabIndex = 19;
             this.postit2_button.UseVisualStyleBackColor = false;
+            this.postit2_button.Visible = false;
             this.postit2_button.Click += new System.EventHandler(this.postit2_button_Click);
             // 
             // postit3_button
@@ -172,6 +178,7 @@ namespace EscapeGameRemake.forms
             this.postit3_button.Size = new System.Drawing.Size(49, 47);
             this.postit3_button.TabIndex = 20;
             this.postit3_button.UseVisualStyleBackColor = false;
+            this.postit3_button.Visible = false;
             this.postit3_button.Click += new System.EventHandler(this.postit3_button_Click);
             // 
             // postit8_button
@@ -188,6 +195,7 @@ namespace EscapeGameRemake.forms
             this.postit8_button.Size = new System.Drawing.Size(46, 45);
             this.postit8_button.TabIndex = 21;
             this.postit8_button.UseVisualStyleBackColor = false;
+            this.postit8_button.Visible = false;
             this.postit8_button.Click += new System.EventHandler(this.postit8_button_Click);
             // 
             // postit6_button
@@ -204,6 +212,7 @@ namespace EscapeGameRemake.forms
             this.postit6_button.Size = new System.Drawing.Size(49, 47);
             this.postit6_button.TabIndex = 22;
             this.postit6_button.UseVisualStyleBackColor = false;
+            this.postit6_button.Visible = false;
             this.postit6_button.Click += new System.EventHandler(this.postit6_button_Click);
             // 
             // postit4_button
@@ -220,6 +229,7 @@ namespace EscapeGameRemake.forms
             this.postit4_button.Size = new System.Drawing.Size(45, 42);
             this.postit4_button.TabIndex = 23;
             this.postit4_button.UseVisualStyleBackColor = false;
+            this.postit4_button.Visible = false;
             this.postit4_button.Click += new System.EventHandler(this.postit4_button_Click);
             // 
             // postit5_button
@@ -236,6 +246,7 @@ namespace EscapeGameRemake.forms
             this.postit5_button.Size = new System.Drawing.Size(44, 44);
             this.postit5_button.TabIndex = 24;
             this.postit5_button.UseVisualStyleBackColor = false;
+            this.postit5_button.Visible = false;
             this.postit5_button.Click += new System.EventHandler(this.postit5_button_Click);
             // 
             // postit7_button
@@ -252,6 +263,7 @@ namespace EscapeGameRemake.forms
             this.postit7_button.Size = new System.Drawing.Size(49, 41);
             this.postit7_button.TabIndex = 25;
             this.postit7_button.UseVisualStyleBackColor = false;
+            this.postit7_button.Visible = false;
             this.postit7_button.Click += new System.EventHandler(this.postit7_button_Click);
             // 
             // OfficeDesk
@@ -281,6 +293,7 @@ namespace EscapeGameRemake.forms
             this.Name = "OfficeDesk";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OfficeDesk";
+            this.Shown += new System.EventHandler(this.OfficeDesk_Shown);
             this.ResumeLayout(false);
 
         }

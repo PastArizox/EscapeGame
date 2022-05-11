@@ -25,5 +25,25 @@ namespace EscapeGameRemake.forms
         {
             Utility.OpenForm(this, new Dining());
         }
+
+        private void Coridoor_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Coridoor_Shown(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void paper1_button_Click(object sender, EventArgs e)
+        {
+            Utility.AddPaperToForm(this, "");
+        }
+
+        private void paper2_button_Click(object sender, EventArgs e)
+        {
+            Utility.AddPaperToForm(this, "");
+        }
     }
 }

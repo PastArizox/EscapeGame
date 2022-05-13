@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="forms\Backstage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Backstage.Designer.cs">
+      <DependentUpon>Backstage.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Closet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,18 @@
     </Compile>
     <Compile Include="forms\Dining.Designer.cs">
       <DependentUpon>Dining.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FinalDoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FinalDoor.Designer.cs">
+      <DependentUpon>FinalDoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\MiddleDining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\MiddleDining.Designer.cs">
+      <DependentUpon>MiddleDining.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Office.cs">
       <SubType>Form</SubType>
@@ -97,6 +115,12 @@
     <Compile Include="forms\PirateCove.Designer.cs">
       <DependentUpon>PirateCove.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Stage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Stage.Designer.cs">
+      <DependentUpon>Stage.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\StartingMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +143,9 @@
     <Compile Include="src\SoundController.cs" />
     <Compile Include="src\temp.cs" />
     <Compile Include="src\Utility.cs" />
+    <EmbeddedResource Include="forms\Backstage.resx">
+      <DependentUpon>Backstage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Closet.resx">
       <DependentUpon>Closet.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +158,12 @@
     <EmbeddedResource Include="forms\Dining.resx">
       <DependentUpon>Dining.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\FinalDoor.resx">
+      <DependentUpon>FinalDoor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\MiddleDining.resx">
+      <DependentUpon>MiddleDining.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Office.resx">
       <DependentUpon>Office.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\PirateCove.resx">
       <DependentUpon>PirateCove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Stage.resx">
+      <DependentUpon>Stage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\StartingMenu.resx">
       <DependentUpon>StartingMenu.cs</DependentUpon>
@@ -229,6 +265,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Coridoor_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backstage_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalDoor_OFF_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalDoor_ON_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiddleDining_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stage_background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

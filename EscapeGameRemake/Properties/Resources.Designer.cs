@@ -63,6 +63,16 @@ namespace EscapeGameRemake.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Backstage_background {
+            get {
+                object obj = ResourceManager.GetObject("Backstage_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Closet_background {
             get {
                 object obj = ResourceManager.GetObject("Closet_background", resourceCulture);
@@ -106,6 +116,36 @@ namespace EscapeGameRemake.Properties {
         internal static System.Drawing.Bitmap Dining_background {
             get {
                 object obj = ResourceManager.GetObject("Dining_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FinalDoor_OFF_background {
+            get {
+                object obj = ResourceManager.GetObject("FinalDoor_OFF_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FinalDoor_ON_background {
+            get {
+                object obj = ResourceManager.GetObject("FinalDoor_ON_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MiddleDining_background {
+            get {
+                object obj = ResourceManager.GetObject("MiddleDining_background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +216,16 @@ namespace EscapeGameRemake.Properties {
         internal static System.Drawing.Bitmap Retour {
             get {
                 object obj = ResourceManager.GetObject("Retour", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stage_background {
+            get {
+                object obj = ResourceManager.GetObject("Stage_background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

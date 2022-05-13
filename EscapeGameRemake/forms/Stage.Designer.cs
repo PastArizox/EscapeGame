@@ -1,7 +1,7 @@
 ﻿
 namespace EscapeGameRemake.forms
 {
-    partial class PirateCove
+    partial class Stage
     {
         /// <summary>
         /// Required designer variable.
@@ -50,19 +50,20 @@ namespace EscapeGameRemake.forms
             this.return_button.UseVisualStyleBackColor = false;
             this.return_button.Click += new System.EventHandler(this.return_button_Click);
             // 
-            // PirateCove
+            // Stage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EscapeGameRemake.Properties.Resources.PirateCove_background;
+            this.BackgroundImage = global::EscapeGameRemake.Properties.Resources.Stage_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1112, 612);
             this.Controls.Add(this.return_button);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.Name = "PirateCove";
+            this.Name = "Stage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PirateCove";
+            this.Text = "Stage";
             this.ResumeLayout(false);
 
         }

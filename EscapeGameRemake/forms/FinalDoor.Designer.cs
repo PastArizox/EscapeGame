@@ -1,7 +1,7 @@
 ﻿
 namespace EscapeGameRemake.forms
 {
-    partial class PirateCove
+    partial class FinalDoor
     {
         /// <summary>
         /// Required designer variable.
@@ -46,23 +46,24 @@ namespace EscapeGameRemake.forms
             this.return_button.Margin = new System.Windows.Forms.Padding(2);
             this.return_button.Name = "return_button";
             this.return_button.Size = new System.Drawing.Size(388, 41);
-            this.return_button.TabIndex = 15;
+            this.return_button.TabIndex = 16;
             this.return_button.UseVisualStyleBackColor = false;
             this.return_button.Click += new System.EventHandler(this.return_button_Click);
             // 
-            // PirateCove
+            // FinalDoor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EscapeGameRemake.Properties.Resources.PirateCove_background;
+            this.BackgroundImage = global::EscapeGameRemake.Properties.Resources.FinalDoor_OFF_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1112, 612);
             this.Controls.Add(this.return_button);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.Name = "PirateCove";
+            this.Name = "FinalDoor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PirateCove";
+            this.Text = "FinalDoor";
             this.ResumeLayout(false);
 
         }

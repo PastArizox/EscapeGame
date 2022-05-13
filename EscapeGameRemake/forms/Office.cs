@@ -6,7 +6,7 @@ namespace EscapeGameRemake.forms
 {
     public partial class Office : Form
     {
-        private static bool DoorOpened = false;
+        private static bool DoorOpened = true;
         private static readonly int DOORCODE = 4794;
 
         public Office()
@@ -75,9 +75,7 @@ namespace EscapeGameRemake.forms
 
         private void Office_Shown(object sender, EventArgs e)
         {
-            digicode_button.Visible = true;
-            desk_button.Visible = true;
-            chest_button.Visible = true;
+
         }
 
         /*private void Screamer_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)

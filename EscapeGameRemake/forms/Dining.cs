@@ -23,14 +23,24 @@ namespace EscapeGameRemake.forms
             Utility.OpenForm(this, new Coridoor());
         }
 
-        private void dining_button_Click(object sender, EventArgs e)
+        private void nose_honk_button_Click(object sender, EventArgs e)
+        {
+            SoundController.Play(SoundType.NOSE_HONK);
+        }
+
+        private void piratecove_button_Click(object sender, EventArgs e)
         {
             Utility.OpenForm(this, new PirateCove());
         }
 
-        private void nose_honk_button_Click(object sender, EventArgs e)
+        private void backstage_button_Click(object sender, EventArgs e)
         {
-            SoundController.Play(SoundType.NOSE_HONK);
+            Utility.OpenForm(this, new Backstage());
+        }
+
+        private void middledining_button_Click(object sender, EventArgs e)
+        {
+            Utility.OpenForm(this, new MiddleDining());
         }
     }
 }

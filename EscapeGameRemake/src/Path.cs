@@ -10,7 +10,7 @@
 
         public enum Name
         {
-            AMBIANCE, CLICK, DOOR, MENU_MUSIC, NOSE_HONK, PAPER, ROBOTVOICE, YAY, OFFICE_JS
+            AMBIANCE, CLICK, DOOR, MENU_MUSIC, NOSE_HONK, PAPER, ROBOTVOICE, YAY, OFFICE_JS, BACKSTAGE_JS
         }
 
         public static string Get(Name name)
@@ -35,6 +35,8 @@
                     return Sound("yay_sound");
                 case Name.OFFICE_JS:
                     return Vid("officejumpscare");
+                case Name.BACKSTAGE_JS:
+                    return Vid("backstagejumpscare");
                 default:
                     return null;
             }

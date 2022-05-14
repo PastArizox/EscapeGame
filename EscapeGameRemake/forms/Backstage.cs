@@ -20,7 +20,7 @@ namespace EscapeGameRemake.forms
 
         private void screamer_button_Click(object sender, EventArgs e)
         {
-            Screamer.Run(this, Path.Name.OFFICE_JS, false);
+            Screamer.Run(this, Path.Name.BACKSTAGE_JS, false);
         }
 
         private void return_button_Click(object sender, EventArgs e)

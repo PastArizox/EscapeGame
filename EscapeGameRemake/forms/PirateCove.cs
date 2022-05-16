@@ -13,6 +13,8 @@ namespace EscapeGameRemake.forms
 {
     public partial class PirateCove : Form
     {
+        public static bool opened = false;
+
         public PirateCove()
         {
             InitializeComponent();
@@ -21,6 +23,11 @@ namespace EscapeGameRemake.forms
         private void return_button_Click(object sender, EventArgs e)
         {
             Utility.OpenForm(this, new Dining());
+        }
+
+        private void openable_button_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("On dirait que ce rideau est connecté à une base de donnée...\nOn doit pouvoir l'ouvrir grâce à une requête...", "PirateCove", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -30,6 +30,7 @@ namespace EscapeGameRemake.forms
         private void InitializeComponent()
         {
             this.return_button = new System.Windows.Forms.Button();
+            this.openable_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // return_button
@@ -50,6 +51,22 @@ namespace EscapeGameRemake.forms
             this.return_button.UseVisualStyleBackColor = false;
             this.return_button.Click += new System.EventHandler(this.return_button_Click);
             // 
+            // openable_button
+            // 
+            this.openable_button.BackColor = System.Drawing.Color.Transparent;
+            this.openable_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openable_button.FlatAppearance.BorderSize = 0;
+            this.openable_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.openable_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.openable_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openable_button.Location = new System.Drawing.Point(452, 148);
+            this.openable_button.Margin = new System.Windows.Forms.Padding(2);
+            this.openable_button.Name = "openable_button";
+            this.openable_button.Size = new System.Drawing.Size(175, 285);
+            this.openable_button.TabIndex = 20;
+            this.openable_button.UseVisualStyleBackColor = false;
+            this.openable_button.Click += new System.EventHandler(this.openable_button_Click);
+            // 
             // PirateCove
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -57,6 +74,7 @@ namespace EscapeGameRemake.forms
             this.BackgroundImage = global::EscapeGameRemake.Properties.Resources.PirateCove_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1112, 612);
+            this.Controls.Add(this.openable_button);
             this.Controls.Add(this.return_button);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -70,5 +88,6 @@ namespace EscapeGameRemake.forms
         #endregion
 
         public System.Windows.Forms.Button return_button;
+        private System.Windows.Forms.Button openable_button;
     }
 }

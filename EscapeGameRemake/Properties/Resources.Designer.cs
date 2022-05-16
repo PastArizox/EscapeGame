@@ -193,9 +193,19 @@ namespace EscapeGameRemake.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PirateCove_background {
+        internal static System.Drawing.Bitmap PirateCove_OFF_background {
             get {
-                object obj = ResourceManager.GetObject("PirateCove_background", resourceCulture);
+                object obj = ResourceManager.GetObject("PirateCove_OFF_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PirateCove_ON_background {
+            get {
+                object obj = ResourceManager.GetObject("PirateCove_ON_background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

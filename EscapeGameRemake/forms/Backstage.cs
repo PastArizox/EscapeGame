@@ -27,5 +27,11 @@ namespace EscapeGameRemake.forms
         {
             Utility.OpenForm(this, new Dining());
         }
+
+        private void computer_button_Click(object sender, EventArgs e)
+        {
+            TestSqlRequest form = new TestSqlRequest();
+            form.ShowDialog();
+        }
     }
 }

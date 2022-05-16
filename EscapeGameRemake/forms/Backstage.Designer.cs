@@ -50,6 +50,7 @@ namespace EscapeGameRemake.forms
             this.computer_button.Size = new System.Drawing.Size(66, 55);
             this.computer_button.TabIndex = 19;
             this.computer_button.UseVisualStyleBackColor = false;
+            this.computer_button.Click += new System.EventHandler(this.computer_button_Click);
             // 
             // eye_button
             // 

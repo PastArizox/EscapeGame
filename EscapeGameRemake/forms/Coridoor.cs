@@ -43,7 +43,10 @@ namespace EscapeGameRemake.forms
 
         private void paper2_button_Click(object sender, EventArgs e)
         {
-            Utility.AddPaperToForm(this, "");
+            Utility.AddPaperToForm(this, "\n        Nom de la table: animatronics" +
+                                         "\n        Nom de la première colonne: id" +
+                                         "\n        Nom de la seconde colonne: name" +
+                                         "\n        Nom de la troisième colonne: status");
         }
     }
 }

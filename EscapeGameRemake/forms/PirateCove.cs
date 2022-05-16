@@ -20,6 +20,21 @@ namespace EscapeGameRemake.forms
             InitializeComponent();
         }
 
+        private void PirateCove_Load(object sender, EventArgs e)
+        {
+            CheckCurtain();
+        }
+
+        private void CheckCurtain()
+        {
+            if (opened)
+            {
+                BackgroundImage = Properties.Resources.PirateCove_ON_background;
+                openable_button.Visible = false;
+                // Visible = true sur les buttons sur foxy
+            }
+        }
+
         private void return_button_Click(object sender, EventArgs e)
         {
             Utility.OpenForm(this, new Dining());

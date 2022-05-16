@@ -7,7 +7,21 @@ namespace EscapeGameRemake.src
         public static void OpenForm(Form targetForm) // For the Program.cs one (root form doesn't have a mainForm)
         {
             targetForm.FormClosed += Form_FormClosed;
+            targetForm.Shown += TargetForm_Shown;
             targetForm.Show();
+        }
+
+        private static void TargetForm_Shown(object sender, System.EventArgs e)
+        {
+            Form form = (Form)sender;
+            foreach (Control ctrl in form.Controls)
+            {
+                if (ctrl.Name.Contains("button"))
+                {
+                    Button btn = (Button)ctrl;
+                    btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(0, 255, 255, 255);
+                }
+            }
         }
 
         public static void OpenForm(Form mainForm, Form targetForm) // For all the other forms

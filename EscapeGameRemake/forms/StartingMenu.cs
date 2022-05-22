@@ -24,7 +24,7 @@ namespace EscapeGameRemake
 
         private void credits_button_Click(object sender, System.EventArgs e)
         {
-            // Utility.OpenForm(this, new forms.Credits());
+            Utility.OpenForm(this, new forms.Credits());
         }
 
         private void nose_honk_button_Click(object sender, System.EventArgs e)

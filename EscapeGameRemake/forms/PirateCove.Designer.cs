@@ -76,18 +76,20 @@ namespace EscapeGameRemake.forms
             this.eye_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.eye_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.eye_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.eye_button.Location = new System.Drawing.Point(508, 176);
+            this.eye_button.Location = new System.Drawing.Point(540, 197);
             this.eye_button.Margin = new System.Windows.Forms.Padding(2);
             this.eye_button.Name = "eye_button";
-            this.eye_button.Size = new System.Drawing.Size(29, 27);
-            this.eye_button.TabIndex = 21;
+            this.eye_button.Size = new System.Drawing.Size(26, 21);
+            this.eye_button.TabIndex = 22;
             this.eye_button.UseVisualStyleBackColor = false;
+            this.eye_button.Visible = false;
+            this.eye_button.Click += new System.EventHandler(this.eye_button_Click);
             // 
             // PirateCove
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EscapeGameRemake.Properties.Resources.PirateCove_OFF_background;
+            this.BackgroundImage = global::EscapeGameRemake.Properties.Resources.PirateCove_OFF_OFF_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1112, 612);
             this.Controls.Add(this.eye_button);

@@ -118,8 +118,32 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Backstage_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Backstage_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Arcade_OFF_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Arcade_OFF_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Arcade_ON_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Arcade_ON_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Backstage_OFF_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Backstage_OFF_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Backstage_ON_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Backstage_ON_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bonnie_Eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bonnie_Eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chest_OFF_OFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chest_OFF_OFF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chest_ON_OFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chest_ON_OFF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chest_ON_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chest_ON_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chica_Eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chica_Eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Closet_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Closet_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,11 +154,20 @@
   <data name="Coridoor_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Coridoor_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Credits_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Credits_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Digicode_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Digicode_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Dining_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dining_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Dining_OFF_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dining_OFF_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dining_ON_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dining_ON_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EndScreen_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EndScreen_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FinalDoor_OFF_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FinalDoor_OFF_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,8 +175,29 @@
   <data name="FinalDoor_ON_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FinalDoor_ON_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MiddleDining_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MiddleDining_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Foxy_Eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Foxy_Eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Freddy_Eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Freddy_Eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kitchen_OFF_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kitchen_OFF_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kitchen_ON_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kitchen_ON_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Map" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MiddleDining_OFF_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MiddleDining_OFF_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MiddleDining_ON_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MiddleDining_ON_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monitor_Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monitor_Screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="OfficeDesk_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OfficeDesk_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,11 +211,14 @@
   <data name="Paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PirateCove_OFF_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PirateCove_OFF_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PirateCove_OFF_OFF_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PirateCove_OFF_OFF_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PirateCove_ON_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PirateCove_ON_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PirateCove_ON_OFF_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PirateCove_ON_OFF_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PirateCove_ON_ON_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PirateCove_ON_ON_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PostIt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PostIt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,8 +226,11 @@
   <data name="Retour" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Retour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Stage_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Stage_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Stage_OFF_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stage_OFF_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stage_ON_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stage_ON_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="StartingMenu_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\StartingMenu_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

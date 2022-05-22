@@ -44,10 +44,10 @@ namespace EscapeGameRemake.forms
             this.desk_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.desk_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.desk_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.desk_button.Location = new System.Drawing.Point(386, 197);
+            this.desk_button.Location = new System.Drawing.Point(386, 259);
             this.desk_button.Margin = new System.Windows.Forms.Padding(2);
             this.desk_button.Name = "desk_button";
-            this.desk_button.Size = new System.Drawing.Size(346, 350);
+            this.desk_button.Size = new System.Drawing.Size(346, 151);
             this.desk_button.TabIndex = 11;
             this.desk_button.UseVisualStyleBackColor = false;
             this.desk_button.Click += new System.EventHandler(this.desk_button_Click);
@@ -117,6 +117,7 @@ namespace EscapeGameRemake.forms
             this.chest_button.Size = new System.Drawing.Size(59, 32);
             this.chest_button.TabIndex = 13;
             this.chest_button.UseVisualStyleBackColor = false;
+            this.chest_button.Click += new System.EventHandler(this.chest_button_Click);
             // 
             // Office
             // 

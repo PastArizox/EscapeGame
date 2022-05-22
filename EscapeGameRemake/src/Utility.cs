@@ -63,5 +63,24 @@ namespace EscapeGameRemake.src
             MainForm.Controls.Add(PCP);
             PCP.BringToFront();
         }
+
+        public static void AddMapToForm(Form MainForm)
+        {
+            Map map = new Map(MainForm);
+            map.Create();
+        }
+
+        public static void OpenChest(Form MainForm)
+        {
+            forms.Chest chest = new forms.Chest();
+            chest.Size = new System.Drawing.Size(MainForm.Width, MainForm.Height);
+            chest.ShowDialog();
+        }
+
+        public static void AddEyetoForm(Form MainForm, System.Drawing.Bitmap Image)
+        {
+            Eye eye = new Eye(MainForm, Image);
+            eye.Create();
+        }
     }
 }

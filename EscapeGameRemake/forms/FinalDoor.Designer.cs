@@ -30,6 +30,8 @@ namespace EscapeGameRemake.forms
         private void InitializeComponent()
         {
             this.return_button = new System.Windows.Forms.Button();
+            this.digicode_button = new System.Windows.Forms.Button();
+            this.door_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // return_button
@@ -50,6 +52,39 @@ namespace EscapeGameRemake.forms
             this.return_button.UseVisualStyleBackColor = false;
             this.return_button.Click += new System.EventHandler(this.return_button_Click);
             // 
+            // digicode_button
+            // 
+            this.digicode_button.BackColor = System.Drawing.Color.Transparent;
+            this.digicode_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.digicode_button.FlatAppearance.BorderSize = 0;
+            this.digicode_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.digicode_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.digicode_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.digicode_button.Location = new System.Drawing.Point(735, 246);
+            this.digicode_button.Margin = new System.Windows.Forms.Padding(2);
+            this.digicode_button.Name = "digicode_button";
+            this.digicode_button.Size = new System.Drawing.Size(80, 146);
+            this.digicode_button.TabIndex = 17;
+            this.digicode_button.UseVisualStyleBackColor = false;
+            this.digicode_button.Click += new System.EventHandler(this.digicode_button_Click);
+            // 
+            // door_button
+            // 
+            this.door_button.BackColor = System.Drawing.Color.Transparent;
+            this.door_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.door_button.FlatAppearance.BorderSize = 0;
+            this.door_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.door_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.door_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.door_button.Location = new System.Drawing.Point(321, 16);
+            this.door_button.Margin = new System.Windows.Forms.Padding(2);
+            this.door_button.Name = "door_button";
+            this.door_button.Size = new System.Drawing.Size(366, 540);
+            this.door_button.TabIndex = 18;
+            this.door_button.UseVisualStyleBackColor = false;
+            this.door_button.Visible = false;
+            this.door_button.Click += new System.EventHandler(this.door_button_Click);
+            // 
             // FinalDoor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -57,6 +92,8 @@ namespace EscapeGameRemake.forms
             this.BackgroundImage = global::EscapeGameRemake.Properties.Resources.FinalDoor_OFF_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1112, 612);
+            this.Controls.Add(this.door_button);
+            this.Controls.Add(this.digicode_button);
             this.Controls.Add(this.return_button);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -71,5 +108,7 @@ namespace EscapeGameRemake.forms
         #endregion
 
         public System.Windows.Forms.Button return_button;
+        public System.Windows.Forms.Button digicode_button;
+        private System.Windows.Forms.Button door_button;
     }
 }

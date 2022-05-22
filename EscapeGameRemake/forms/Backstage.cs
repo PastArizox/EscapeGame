@@ -13,9 +13,23 @@ namespace EscapeGameRemake.forms
 {
     public partial class Backstage : Form
     {
+        public static bool bonnie_enabled = false;
+
+        private void check_state()
+        {
+            if (bonnie_enabled)
+            {
+                BackgroundImage = Properties.Resources.Backstage_ON_background;
+            }
+        }
         public Backstage()
         {
             InitializeComponent();
+        }
+
+        private void Backstage_Load(object sender, EventArgs e)
+        {
+            check_state();
         }
 
         private void screamer_button_Click(object sender, EventArgs e)
@@ -30,7 +44,7 @@ namespace EscapeGameRemake.forms
 
         private void computer_button_Click(object sender, EventArgs e)
         {
-            TestSqlRequest form = new TestSqlRequest();
+            SqlMonitor form = new SqlMonitor();
             form.ShowDialog();
         }
     }

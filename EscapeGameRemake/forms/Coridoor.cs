@@ -26,27 +26,24 @@ namespace EscapeGameRemake.forms
             Utility.OpenForm(this, new Dining());
         }
 
-        private void Coridoor_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Coridoor_Shown(object sender, EventArgs e)
-        {
-            
-        }
-
         private void paper1_button_Click(object sender, EventArgs e)
         {
-            Utility.AddPaperToForm(this, "");
+            Utility.AddPaperToForm(this, "Note à moi même :\n\n" +
+                                         "\n                UPDATE table_name\n" +
+                                         "\n                SET column1 = value\n" +
+                                         "\n                WHERE condition;\n" +
+                                         "\n\n                                                                Mike Schmidt");
         }
 
         private void paper2_button_Click(object sender, EventArgs e)
         {
-            Utility.AddPaperToForm(this, "\n        Nom de la table: animatronics" +
-                                         "\n        Nom de la première colonne: id" +
-                                         "\n        Nom de la seconde colonne: name" +
-                                         "\n        Nom de la troisième colonne: status");
+            Utility.AddPaperToForm(this, "\n        Freddy : " + (Stage.freddy_enabled ? "enabled" : "disabled") +
+                                         "\n        Bonnie : " + (Backstage.bonnie_enabled ? "enabled" : "disabled") +
+                                         "\n        Chica : " + (Kitchen.chica_enabled ? "enabled" : "disabled") +
+                                         "\n        Foxy : " + (PirateCove.foxy_enabled ? "enabled" : "disabled" +
+                                         "\n\n                          Ne les confondez pas !" +
+                                         "\n        Foxy est le renard,        Freddy l'ours,              Chica le poulet\n" +
+                                         "\n     Et pour finir, Bonnie est le lapin"));
         }
     }
 }

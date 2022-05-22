@@ -24,5 +24,19 @@ namespace EscapeGameRemake.forms
         {
             Utility.OpenForm(this, new Coridoor());
         }
+
+        private void map_button_Click(object sender, EventArgs e)
+        {
+            Utility.AddMapToForm(this);
+        }
+
+        private void key_button_Click(object sender, EventArgs e)
+        {
+            if (!Player.key1)
+            {
+                MessageBox.Show("Vous venez de ramasser une clé.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Player.key1 = true;
+            }
+        }
     }
 }

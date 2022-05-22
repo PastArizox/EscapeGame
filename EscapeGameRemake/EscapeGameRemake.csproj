@@ -49,11 +49,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="forms\Arcade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Arcade.Designer.cs">
+      <DependentUpon>Arcade.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Backstage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forms\Backstage.Designer.cs">
       <DependentUpon>Backstage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Chest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Chest.Designer.cs">
+      <DependentUpon>Chest.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Closet.cs">
       <SubType>Form</SubType>
@@ -67,6 +79,12 @@
     <Compile Include="forms\Coridoor.Designer.cs">
       <DependentUpon>Coridoor.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Credits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Credits.Designer.cs">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Digicode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,11 +97,23 @@
     <Compile Include="forms\Dining.Designer.cs">
       <DependentUpon>Dining.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\EndScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\EndScreen.Designer.cs">
+      <DependentUpon>EndScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\FinalDoor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forms\FinalDoor.Designer.cs">
       <DependentUpon>FinalDoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Kitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Kitchen.Designer.cs">
+      <DependentUpon>Kitchen.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\MiddleDining.cs">
       <SubType>Form</SubType>
@@ -115,11 +145,11 @@
     <Compile Include="forms\PirateCove.Designer.cs">
       <DependentUpon>PirateCove.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\TestSqlRequest.cs">
+    <Compile Include="forms\SqlMonitor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\TestSqlRequest.Designer.cs">
-      <DependentUpon>TestSqlRequest.cs</DependentUpon>
+    <Compile Include="forms\SqlMonitor.Designer.cs">
+      <DependentUpon>SqlMonitor.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Stage.cs">
       <SubType>Form</SubType>
@@ -133,12 +163,6 @@
     <Compile Include="forms\StartingMenu.Designer.cs">
       <DependentUpon>StartingMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\testscreamer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="forms\testscreamer.Designer.cs">
-      <DependentUpon>testscreamer.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -146,7 +170,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="src\Eye.cs" />
+    <Compile Include="src\Player.cs" />
     <Compile Include="src\ContextPaper.cs" />
+    <Compile Include="src\Map.cs" />
     <Compile Include="src\Path.cs" />
     <Compile Include="src\Paper.cs" />
     <Compile Include="src\PostIt.cs" />
@@ -154,8 +181,14 @@
     <Compile Include="src\SoundController.cs" />
     <Compile Include="src\temp.cs" />
     <Compile Include="src\Utility.cs" />
+    <EmbeddedResource Include="forms\Arcade.resx">
+      <DependentUpon>Arcade.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Backstage.resx">
       <DependentUpon>Backstage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Chest.resx">
+      <DependentUpon>Chest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Closet.resx">
       <DependentUpon>Closet.cs</DependentUpon>
@@ -163,14 +196,23 @@
     <EmbeddedResource Include="forms\Coridoor.resx">
       <DependentUpon>Coridoor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\Credits.resx">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Digicode.resx">
       <DependentUpon>Digicode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Dining.resx">
       <DependentUpon>Dining.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\EndScreen.resx">
+      <DependentUpon>EndScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\FinalDoor.resx">
       <DependentUpon>FinalDoor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Kitchen.resx">
+      <DependentUpon>Kitchen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\MiddleDining.resx">
       <DependentUpon>MiddleDining.cs</DependentUpon>
@@ -187,17 +229,14 @@
     <EmbeddedResource Include="forms\PirateCove.resx">
       <DependentUpon>PirateCove.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\TestSqlRequest.resx">
-      <DependentUpon>TestSqlRequest.cs</DependentUpon>
+    <EmbeddedResource Include="forms\SqlMonitor.resx">
+      <DependentUpon>SqlMonitor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Stage.resx">
       <DependentUpon>Stage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\StartingMenu.resx">
       <DependentUpon>StartingMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\testscreamer.resx">
-      <DependentUpon>testscreamer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -261,19 +300,10 @@
     <None Include="Resources\OfficeDesk_background.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Closet_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Dining_background.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\ContextPaper.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Coridoor_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Backstage_background.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FinalDoor_OFF_background.png" />
@@ -282,16 +312,85 @@
     <None Include="Resources\FinalDoor_ON_background.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\MiddleDining_background.png" />
+    <None Include="Resources\Monitor_Screen.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Stage_background.png" />
+    <None Include="Resources\Stage_OFF_background.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\PirateCove_ON_background.png" />
+    <None Include="Resources\Stage_ON_background.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\PirateCove_OFF_background.png" />
+    <None Include="Resources\PirateCove_OFF_OFF_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PirateCove_ON_OFF_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PirateCove_ON_ON_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dining_OFF_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dining_ON_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kitchen_OFF_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kitchen_ON_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiddleDining_OFF_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiddleDining_ON_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chest_OFF_OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chest_ON_OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chest_ON_ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backstage_OFF_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backstage_ON_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bonnie_Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chica_Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Foxy_Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Freddy_Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Credits_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arcade_OFF_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arcade_ON_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EndScreen_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Closet_background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

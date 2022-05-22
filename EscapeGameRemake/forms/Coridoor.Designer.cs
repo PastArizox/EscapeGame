@@ -170,8 +170,6 @@ namespace EscapeGameRemake.forms
             this.Name = "Coridoor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Coridoor";
-            this.Load += new System.EventHandler(this.Coridoor_Load);
-            this.Shown += new System.EventHandler(this.Coridoor_Shown);
             this.ResumeLayout(false);
 
         }

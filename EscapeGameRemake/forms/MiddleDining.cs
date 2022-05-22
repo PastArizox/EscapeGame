@@ -23,14 +23,32 @@ namespace EscapeGameRemake.forms
             Utility.OpenForm(this, new Dining());
         }
 
-        private void middledining_button_Click(object sender, EventArgs e)
+        private void check_state()
         {
-            Utility.OpenForm(this, new Stage());
+            if (Stage.freddy_enabled)
+            {
+                BackgroundImage = Properties.Resources.MiddleDining_ON_background;
+            }
+        }
+
+        private void MiddleDining_Load(object sender, EventArgs e)
+        {
+            check_state();
         }
 
         private void finaldoor_button_Click(object sender, EventArgs e)
         {
             Utility.OpenForm(this, new FinalDoor());
+        }
+
+        private void stage_button_Click(object sender, EventArgs e)
+        {
+            Utility.OpenForm(this, new Stage());
+        }
+
+        private void arcade_button_Click(object sender, EventArgs e)
+        {
+            Utility.OpenForm(this, new Arcade());
         }
     }
 }

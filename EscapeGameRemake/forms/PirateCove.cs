@@ -14,6 +14,7 @@ namespace EscapeGameRemake.forms
     public partial class PirateCove : Form
     {
         public static bool opened = false;
+        public static bool foxy_enabled = false;
 
         public PirateCove()
         {
@@ -27,11 +28,15 @@ namespace EscapeGameRemake.forms
 
         private void CheckCurtain()
         {
-            if (opened)
+            if (opened && foxy_enabled)
             {
-                BackgroundImage = Properties.Resources.PirateCove_ON_background;
+                BackgroundImage = Properties.Resources.PirateCove_ON_ON_background;
                 openable_button.Visible = false;
-                // Visible = true sur les buttons sur foxy
+                eye_button.Visible = true;
+            } else if (opened && !foxy_enabled)
+            {
+                BackgroundImage = Properties.Resources.PirateCove_ON_OFF_background;
+                openable_button.Visible = false;
             }
         }
 
@@ -43,6 +48,11 @@ namespace EscapeGameRemake.forms
         private void openable_button_Click(object sender, EventArgs e)
         {
             MessageBox.Show("On dirait que ce rideau est connecté à une base de donnée...\nOn doit pouvoir l'ouvrir grâce à une requête...", "PirateCove", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void eye_button_Click(object sender, EventArgs e)
+        {
+            Utility.AddEyetoForm(this, Properties.Resources.Foxy_Eye);
         }
     }
 }

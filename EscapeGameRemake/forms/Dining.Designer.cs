@@ -62,10 +62,10 @@ namespace EscapeGameRemake.forms
             this.piratecove_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.piratecove_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.piratecove_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.piratecove_button.Location = new System.Drawing.Point(76, 259);
+            this.piratecove_button.Location = new System.Drawing.Point(1, 179);
             this.piratecove_button.Margin = new System.Windows.Forms.Padding(2);
             this.piratecove_button.Name = "piratecove_button";
-            this.piratecove_button.Size = new System.Drawing.Size(240, 111);
+            this.piratecove_button.Size = new System.Drawing.Size(180, 180);
             this.piratecove_button.TabIndex = 16;
             this.piratecove_button.UseVisualStyleBackColor = false;
             this.piratecove_button.Click += new System.EventHandler(this.piratecove_button_Click);
@@ -78,7 +78,7 @@ namespace EscapeGameRemake.forms
             this.nose_honk_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.nose_honk_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.nose_honk_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.nose_honk_button.Location = new System.Drawing.Point(901, 422);
+            this.nose_honk_button.Location = new System.Drawing.Point(991, 418);
             this.nose_honk_button.Margin = new System.Windows.Forms.Padding(2);
             this.nose_honk_button.Name = "nose_honk_button";
             this.nose_honk_button.Size = new System.Drawing.Size(27, 22);
@@ -94,10 +94,10 @@ namespace EscapeGameRemake.forms
             this.backstage_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.backstage_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.backstage_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backstage_button.Location = new System.Drawing.Point(574, 309);
+            this.backstage_button.Location = new System.Drawing.Point(476, 259);
             this.backstage_button.Margin = new System.Windows.Forms.Padding(2);
             this.backstage_button.Name = "backstage_button";
-            this.backstage_button.Size = new System.Drawing.Size(26, 47);
+            this.backstage_button.Size = new System.Drawing.Size(36, 92);
             this.backstage_button.TabIndex = 18;
             this.backstage_button.UseVisualStyleBackColor = false;
             this.backstage_button.Click += new System.EventHandler(this.backstage_button_Click);
@@ -110,10 +110,10 @@ namespace EscapeGameRemake.forms
             this.middledining_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.middledining_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.middledining_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.middledining_button.Location = new System.Drawing.Point(956, 291);
+            this.middledining_button.Location = new System.Drawing.Point(856, 221);
             this.middledining_button.Margin = new System.Windows.Forms.Padding(2);
             this.middledining_button.Name = "middledining_button";
-            this.middledining_button.Size = new System.Drawing.Size(145, 65);
+            this.middledining_button.Size = new System.Drawing.Size(182, 107);
             this.middledining_button.TabIndex = 19;
             this.middledining_button.UseVisualStyleBackColor = false;
             this.middledining_button.Click += new System.EventHandler(this.middledining_button_Click);
@@ -122,7 +122,7 @@ namespace EscapeGameRemake.forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EscapeGameRemake.Properties.Resources.Dining_background;
+            this.BackgroundImage = global::EscapeGameRemake.Properties.Resources.Dining_OFF_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1112, 612);
             this.Controls.Add(this.middledining_button);
@@ -136,6 +136,7 @@ namespace EscapeGameRemake.forms
             this.Name = "Dining";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dining";
+            this.Load += new System.EventHandler(this.Dining_Load);
             this.ResumeLayout(false);
 
         }

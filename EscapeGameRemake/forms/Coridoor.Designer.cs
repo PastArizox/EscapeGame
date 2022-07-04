@@ -134,6 +134,7 @@ namespace EscapeGameRemake.forms
             this.star1_button.Size = new System.Drawing.Size(47, 50);
             this.star1_button.TabIndex = 18;
             this.star1_button.UseVisualStyleBackColor = false;
+            this.star1_button.Click += new System.EventHandler(this.star1_button_Click);
             // 
             // star2_button
             // 
@@ -149,6 +150,7 @@ namespace EscapeGameRemake.forms
             this.star2_button.Size = new System.Drawing.Size(47, 50);
             this.star2_button.TabIndex = 19;
             this.star2_button.UseVisualStyleBackColor = false;
+            this.star2_button.Click += new System.EventHandler(this.star2_button_Click);
             // 
             // Coridoor
             // 
@@ -165,6 +167,7 @@ namespace EscapeGameRemake.forms
             this.Controls.Add(this.dining_button);
             this.Controls.Add(this.closet_button);
             this.Controls.Add(this.return_button);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Coridoor";

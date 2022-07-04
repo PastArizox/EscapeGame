@@ -63,7 +63,7 @@ namespace EscapeGameRemake.forms
             if (Player.key1 && !key1)
             {
                 key1 = true;
-                MessageBox.Show("Cadenas 1 ouvert", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Cadenas 1 ouvert", "Chest", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 check_keys();
             } else { runErrorMessage(); };
         }
@@ -73,7 +73,7 @@ namespace EscapeGameRemake.forms
             if (Player.key2 && !key2)
             {
                 key2 = true;
-                MessageBox.Show("Cadenas 2 ouvert", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Cadenas 2 ouvert", "Chest", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 check_keys();
             }
             else { runErrorMessage(); };

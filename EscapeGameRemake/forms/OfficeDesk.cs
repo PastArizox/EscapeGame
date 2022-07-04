@@ -33,8 +33,8 @@ namespace EscapeGameRemake.forms
         private void paper2_button_Click(object sender, System.EventArgs e)
         {
             Utility.AddPaperToForm(this, "Des données se sont perdues dans cette salle. Vous pourrez trouver le code " +
-                                         "en triant les données dans les bonnes catégories.\n\n\n\n\n\n\n\n" +
-                                         "Attention à Bonnie, il n'aime pas beaucoup les humains.");
+                                         "en triant les données dans les bonnes catégories.\n\n\n\n\n\n\n" +
+                                         "Gare à vous car si vous vous trompez vous troublerez le sommeil de Bonnie");
         }
 
         private void paper3_button_Click(object sender, System.EventArgs e)
@@ -68,7 +68,7 @@ namespace EscapeGameRemake.forms
                 "                           Canard\n" +
                 "Bariroussa\n" +
                 "             Buffle\n\n" +
-                "                   Mammifère");
+                "                   Mammifères");
         }
 
         private void postit4_button_Click(object sender, System.EventArgs e)
@@ -107,7 +107,7 @@ namespace EscapeGameRemake.forms
             Utility.AddPostItToForm(this,
                 "                           Faucon\n" +
                 "       Tortue\n\n" +
-                "Balène\n\n" +
+                "Baleine\n\n" +
                 "                   Oiseaux");
         }
 

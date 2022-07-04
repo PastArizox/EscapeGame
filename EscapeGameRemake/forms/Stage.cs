@@ -27,6 +27,7 @@ namespace EscapeGameRemake.forms
                 nose_honk_button1.Visible = true;
                 nose_honk_button2.Visible = false;
                 eye_button.Visible = true;
+                screamer_button.Visible = true;
                 BackgroundImage = Properties.Resources.Stage_ON_background;
             }
         }
@@ -49,6 +50,13 @@ namespace EscapeGameRemake.forms
         private void eye_button_Click(object sender, EventArgs e)
         {
             Utility.AddEyetoForm(this, Properties.Resources.Freddy_Eye);
+        }
+
+        private void screamer_button_Click(object sender, EventArgs e)
+        {
+            var Rand = new Random();
+            if (Rand.Next(2) == 0)
+                Screamer.Run(this, Path.Name.STAGE_JS, false);
         }
     }
 }

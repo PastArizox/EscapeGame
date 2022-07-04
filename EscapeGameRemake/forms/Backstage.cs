@@ -19,6 +19,7 @@ namespace EscapeGameRemake.forms
         {
             if (bonnie_enabled)
             {
+                screamer_button.Visible = true;
                 BackgroundImage = Properties.Resources.Backstage_ON_background;
             }
         }
@@ -34,7 +35,9 @@ namespace EscapeGameRemake.forms
 
         private void screamer_button_Click(object sender, EventArgs e)
         {
-            Screamer.Run(this, Path.Name.BACKSTAGE_JS, false);
+            var Rand = new Random();
+            if (Rand.Next(2) == 0)
+                Screamer.Run(this, Path.Name.BACKSTAGE_JS, false);
         }
 
         private void return_button_Click(object sender, EventArgs e)

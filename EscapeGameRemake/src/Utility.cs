@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.Drawing;
+using System.Windows.Forms;
 
 namespace EscapeGameRemake.src
 {
@@ -54,6 +55,12 @@ namespace EscapeGameRemake.src
             PIT.Create();
             /*MainForm.Controls.Add(PIT);
             PIT.BringToFront();*/
+        }
+
+        public static void AddStarToForm(Form MainForm, Bitmap Image)
+        {
+            Star star = new Star(MainForm, Image);
+            star.Create();
         }
 
         public static void AddContextPaperToForm(Form MainForm) // Add the context paper to a form

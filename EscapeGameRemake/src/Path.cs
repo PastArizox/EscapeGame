@@ -10,7 +10,7 @@
 
         public enum Name
         {
-            AMBIANCE, CLICK, DOOR, MENU_MUSIC, NOSE_HONK, PAPER, ROBOTVOICE, YAY, OFFICE_JS, BACKSTAGE_JS, RIDEAU, ANIMATRONIC_ON, ERROR_SQL, SHREK, END
+            AMBIANCE, CLICK, DOOR, MENU_MUSIC, NOSE_HONK, PAPER, ROBOTVOICE, YAY, OFFICE_JS, BACKSTAGE_JS, STAGE_JS, PIRATECOVE_JS, KITCHEN_JS, RIDEAU, ANIMATRONIC_ON, ERROR_SQL, SHREK, END
         }
 
         public static string Get(Name name)
@@ -37,6 +37,12 @@
                     return Vid("officejumpscare");
                 case Name.BACKSTAGE_JS:
                     return Vid("backstagejumpscare");
+                case Name.STAGE_JS:
+                    return Vid("stagejumpscare");
+                case Name.PIRATECOVE_JS:
+                    return Vid("piratecovejumpscare");
+                case Name.KITCHEN_JS:
+                    return Vid("kitchenjumpscare");
                 case Name.RIDEAU:
                     return Sound("rideau");
                 case Name.ANIMATRONIC_ON:

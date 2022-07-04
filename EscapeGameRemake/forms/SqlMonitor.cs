@@ -27,7 +27,7 @@ namespace EscapeGameRemake.forms
 
         private void button17_Click(object sender, EventArgs e)
         {
-            if (label1.Text == foxy_request_on) PirateCove.opened = true;
+            //if (label1.Text == foxy_request_on) PirateCove.opened = true;
             switch (label1.Text)
             {
                 case pirate_cove_request:
@@ -40,10 +40,18 @@ namespace EscapeGameRemake.forms
                     label1.Text = "";
                     break;
                 case foxy_request_on:
-                    if (PirateCove.opened && !PirateCove.foxy_enabled)
+                    if (PirateCove.opened)
                     {
-                        PirateCove.foxy_enabled = true;
-                        SoundController.Play(SoundType.ANIMATRONIC_ON);
+                        if (!PirateCove.foxy_enabled)
+                        {
+                            PirateCove.foxy_enabled = true;
+                            SoundController.Play(SoundType.ANIMATRONIC_ON);
+                            Close();
+                        }
+                    } else
+                    {
+                        MessageBox.Show("Foxy ne peut pas être activé pour le moment.", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        label1.Text = "";
                         Close();
                     }
                     break;
@@ -74,12 +82,7 @@ namespace EscapeGameRemake.forms
                 default:
                     MessageBox.Show("Something went wrong...", "ErrorSqlRequest", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     label1.Text = "";
-                    SoundController.Play(SoundType.ERROR_SQL);
-                    PirateCove.opened = true;
-                    PirateCove.foxy_enabled = true;
-                    Stage.freddy_enabled = true;
-                    Backstage.bonnie_enabled = true;
-                    Kitchen.chica_enabled = true;
+                    SoundController.Play(SoundType.ERROR_SQL);    
                     break;
             }
         }

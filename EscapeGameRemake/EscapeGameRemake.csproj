@@ -179,6 +179,7 @@
     <Compile Include="src\PostIt.cs" />
     <Compile Include="src\Screamer.cs" />
     <Compile Include="src\SoundController.cs" />
+    <Compile Include="src\Star.cs" />
     <Compile Include="src\temp.cs" />
     <Compile Include="src\Utility.cs" />
     <EmbeddedResource Include="forms\Arcade.resx">
@@ -391,6 +392,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Closet_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StarAnimatronics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StarRoom.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

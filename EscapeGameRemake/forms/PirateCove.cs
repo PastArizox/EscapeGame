@@ -33,6 +33,7 @@ namespace EscapeGameRemake.forms
                 BackgroundImage = Properties.Resources.PirateCove_ON_ON_background;
                 openable_button.Visible = false;
                 eye_button.Visible = true;
+                screamer_button.Visible = true;
             } else if (opened && !foxy_enabled)
             {
                 BackgroundImage = Properties.Resources.PirateCove_ON_OFF_background;
@@ -53,6 +54,13 @@ namespace EscapeGameRemake.forms
         private void eye_button_Click(object sender, EventArgs e)
         {
             Utility.AddEyetoForm(this, Properties.Resources.Foxy_Eye);
+        }
+
+        private void screamer_button_Click(object sender, EventArgs e)
+        {
+            var Rand = new Random();
+            if (Rand.Next(2) == 0)
+                Screamer.Run(this, Path.Name.PIRATECOVE_JS, false);
         }
     }
 }

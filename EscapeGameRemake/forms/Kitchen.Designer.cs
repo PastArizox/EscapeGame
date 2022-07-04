@@ -32,6 +32,7 @@ namespace EscapeGameRemake.forms
             this.return_button = new System.Windows.Forms.Button();
             this.nose_honk_button = new System.Windows.Forms.Button();
             this.eye_button = new System.Windows.Forms.Button();
+            this.screamer_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // return_button
@@ -85,6 +86,23 @@ namespace EscapeGameRemake.forms
             this.eye_button.Visible = false;
             this.eye_button.Click += new System.EventHandler(this.eye_button_Click);
             // 
+            // screamer_button
+            // 
+            this.screamer_button.BackColor = System.Drawing.Color.Transparent;
+            this.screamer_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.screamer_button.FlatAppearance.BorderSize = 0;
+            this.screamer_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.screamer_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.screamer_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.screamer_button.Location = new System.Drawing.Point(501, 124);
+            this.screamer_button.Margin = new System.Windows.Forms.Padding(2);
+            this.screamer_button.Name = "screamer_button";
+            this.screamer_button.Size = new System.Drawing.Size(85, 90);
+            this.screamer_button.TabIndex = 29;
+            this.screamer_button.UseVisualStyleBackColor = false;
+            this.screamer_button.Visible = false;
+            this.screamer_button.Click += new System.EventHandler(this.screamer_button_Click);
+            // 
             // Kitchen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -95,6 +113,7 @@ namespace EscapeGameRemake.forms
             this.Controls.Add(this.eye_button);
             this.Controls.Add(this.nose_honk_button);
             this.Controls.Add(this.return_button);
+            this.Controls.Add(this.screamer_button);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -111,5 +130,6 @@ namespace EscapeGameRemake.forms
         public System.Windows.Forms.Button return_button;
         private System.Windows.Forms.Button nose_honk_button;
         private System.Windows.Forms.Button eye_button;
+        private System.Windows.Forms.Button screamer_button;
     }
 }

@@ -232,6 +232,12 @@
   <data name="Stage_ON_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Stage_ON_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="StarAnimatronics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StarAnimatronics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StarRoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StarRoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="StartingMenu_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\StartingMenu_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

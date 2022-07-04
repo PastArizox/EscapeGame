@@ -26,6 +26,7 @@ namespace EscapeGameRemake.forms
             {
                 BackgroundImage = Properties.Resources.Kitchen_ON_background;
                 eye_button.Visible = true;
+                screamer_button.Visible = true;
             }
         }
 
@@ -47,6 +48,13 @@ namespace EscapeGameRemake.forms
         private void eye_button_Click(object sender, EventArgs e)
         {
             Utility.AddEyetoForm(this, Properties.Resources.Chica_Eye);
+        }
+
+        private void screamer_button_Click(object sender, EventArgs e)
+        {
+            var Rand = new Random();
+            if (Rand.Next(2) == 0)
+                Screamer.Run(this, Path.Name.KITCHEN_JS, false);
         }
     }
 }

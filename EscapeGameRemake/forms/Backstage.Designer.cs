@@ -80,6 +80,7 @@ namespace EscapeGameRemake.forms
             this.screamer_button.Size = new System.Drawing.Size(92, 101);
             this.screamer_button.TabIndex = 22;
             this.screamer_button.UseVisualStyleBackColor = false;
+            this.screamer_button.Visible = false;
             this.screamer_button.Click += new System.EventHandler(this.screamer_button_Click);
             // 
             // return_button

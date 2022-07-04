@@ -45,5 +45,15 @@ namespace EscapeGameRemake.forms
                                          "\n        Foxy est le renard,        Freddy l'ours,              Chica le poulet\n" +
                                          "\n     Et pour finir, Bonnie est le lapin"));
         }
+
+        private void star1_button_Click(object sender, EventArgs e)
+        {
+            Utility.AddStarToForm(this, Properties.Resources.StarAnimatronics);
+        }
+
+        private void star2_button_Click(object sender, EventArgs e)
+        {
+            Utility.AddStarToForm(this, Properties.Resources.StarRoom);
+        }
     }
 }
